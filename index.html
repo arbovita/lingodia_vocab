@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lingo Día Daily Vocab Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">Spanish 2 Daily Quiz Prep</div>
+    <h1>Lingo Día</h1>
+    <p>Pick the exact lesson, category, and daily quiz set. Practice only what you need, then drill missed words until they stick.</p>
+  </header>
+
+  <main class="app-shell">
+    <section class="control-panel card">
+      <div class="select-grid">
+        <label>
+          Lesson
+          <select id="lessonSelect"></select>
+        </label>
+
+        <label>
+          Category
+          <select id="categorySelect"></select>
+        </label>
+
+        <label>
+          Daily quiz set
+          <select id="dailySetSelect"></select>
+        </label>
+      </div>
+
+      <div class="set-summary" id="setSummary"></div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-view="today">Today’s Set</button>
+      <button class="tab" data-view="learn">Learn</button>
+      <button class="tab" data-view="recall">Recall</button>
+      <button class="tab" data-view="type">Type</button>
+      <button class="tab" data-view="match">Match</button>
+      <button class="tab" data-view="final">Final Check</button>
+      <button class="tab" data-view="missed">Missed</button>
+      <button class="tab" data-view="bank">Word Bank</button>
+      <button class="tab" data-view="teacher">Teacher Notes</button>
+    </nav>
+
+    <section id="view" class="card main-card"></section>
+  </main>
+
+  <footer class="footer">
+    Built for fast daily vocab review. No account, no ads, no distractions.
+  </footer>
+
+  <script src="vocab.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
